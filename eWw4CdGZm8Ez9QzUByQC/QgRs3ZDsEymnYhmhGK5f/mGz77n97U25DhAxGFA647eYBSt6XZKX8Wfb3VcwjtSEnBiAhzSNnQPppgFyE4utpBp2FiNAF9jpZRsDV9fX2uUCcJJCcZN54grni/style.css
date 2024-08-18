@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+  background-color: #f0f0f0;
+}
+
+
+
+.natureRemoSec {
+  margin: 10px 5px;
+  position: absolute;
+  z-index: 999;
+}
+
+.natureRemoSec h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.natureRemoSec select{
+  padding-left: 10px;
+  height: 35px;
+  width: 200px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.natureRemoSec option {
+  padding-left: 3px;
+}
+.natureRemoSec button{
+  height: 35px;
+  width: 100px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+
+
+.clockSec{
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.clock {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* スクロールされたとき */
+.scrolled {
+  width: 100%;
+  text-align: initial;
+  position: fixed;
+  padding: 0.5rem 0;
+  top: 0;
+  left: 0;
+}
+.scrolleddate {
+  left: 7%;
+}
+.scrolledtime {
+  text-align: center;
+}
+
+
+
+.earthquakeMonitorSec {
+  text-align: center;
+  position: absolute;
+  padding: 7px 5px;
+  right: 0;
+}
+
+
+
+@media screen and (max-width: 1140px) {
+/* ここに横幅が1140px以下の時に発動するスタイルを記述 */
+  .clockSec{
+    position: static;
+  }
+
+  .earthquakeMonitorSec {
+    padding: 30px 5px;
+    position: static;
+  }
+  .earthquakeMonitorSec iframe {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 580px) {
+
+
+
+  /* スクロールされたとき */
+  .scrolled {
+    width: 100%;
+    text-align: initial;
+    position: fixed;
+    padding: 0.5rem 0;
+    top: 0;
+    left: 0;
+  }
+  .scrolleddate {
+    text-align: center;
+  }
+  .scrolledtime {
+    text-align: center;
+    top: 2rem;
+  }
+
+
+
+}
