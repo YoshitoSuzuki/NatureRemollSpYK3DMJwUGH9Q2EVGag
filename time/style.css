@@ -100,3 +100,22 @@ body {
 
 
 }
+
+@media screen and (max-width: 520px) {
+
+  .clockSec {
+    padding-top: 50px;
+  }
+  .clock {
+    line-height: 3rem;
+  }
+
+  #reiwaDate {
+    color: #f0f0f0;
+  }
+  #utctime {
+    color: #f0f0f0;
+  }
+
+
+}
