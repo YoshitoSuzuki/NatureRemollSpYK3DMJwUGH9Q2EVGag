@@ -19,7 +19,7 @@ function updateTime() {
   // 令和表記
   const year = now.getFullYear();
   const reiwaYear = year - 2018; // 2019年が令和1年
-  const reiwaDate = `令和${reiwaYear}年${now.toLocaleDateString('ja-JP', { month: 'long', day: 'numeric', weekday: 'long' })}`;
+  const reiwaDate = `${year}年 令和${reiwaYear}年${now.toLocaleDateString('ja-JP', { month: 'long', day: 'numeric', weekday: 'long' })}`;
   document.getElementById('reiwaDate').textContent = reiwaDate;
 
   //2006/05/07表記
