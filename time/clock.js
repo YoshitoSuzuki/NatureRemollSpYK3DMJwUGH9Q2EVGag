@@ -13,13 +13,13 @@ function updateTime() {
     second: '2-digit'
     }
   );
-  document.getElementById('date').textContent = date;
+  // document.getElementById('date').textContent = date;
   document.getElementById('time').textContent = time;
 
   // 令和表記
   const year = now.getFullYear();
   const reiwaYear = year - 2018; // 2019年が令和1年
-  const reiwaDate = `${year}年令和${reiwaYear}年${now.toLocaleDateString('ja-JP', { month: 'long', day: 'numeric', weekday: 'long' })}`;
+  const reiwaDate = `${year}年 令和${reiwaYear}年${now.toLocaleDateString('ja-JP', { month: 'long', day: 'numeric', weekday: 'long' })}`;
   document.getElementById('reiwaDate').textContent = reiwaDate;
 
   //2006/05/07表記
